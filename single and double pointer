@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+
+    int a=10;
+    int *ptr,**pt;
+    printf("%d\n",a);
+    ptr=&a;
+    *ptr=20;
+    printf("%d\n",a);
+    pt=&ptr;
+    **pt=30;
+    printf("%d\n",a);
+}
