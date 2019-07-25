@@ -1,0 +1,20 @@
+#include<stdio.h>
+int update();
+int update2();
+int main()
+{
+  int a,b;
+  scanf("%d %d",&a,&b);
+  printf("%d \n",update(&a,&b));
+  printf("%d",update2(&a,&b));
+  return 0;  
+}
+int update(int *a,int *b)
+{
+    return *a+*b; 
+
+}
+int update2(int *c,int *d)
+{
+    return abs(*c-*d);
+}
